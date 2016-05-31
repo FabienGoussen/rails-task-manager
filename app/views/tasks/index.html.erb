@@ -1,6 +1,8 @@
 <h1> All Tasks</h1>
 <% @tasks.each do |task| %>
   <p>Authors : <%= task.name.capitalize %> <br> Description : <%= task.description %></p>
-
+  <%= link_to "Delete", tasks_path,
+        method: :delete,
+        data: { confirm: "Are you sure?" } %>
 <% end %>
 
