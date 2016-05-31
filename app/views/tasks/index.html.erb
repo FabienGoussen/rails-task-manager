@@ -1,0 +1,6 @@
+<h1> All Tasks</h1>
+<% @tasks.each do |task| %>
+  <p>Authors : <%= task.name.capitalize %> <br> Description : <%= task.description %></p>
+
+<% end %>
+
